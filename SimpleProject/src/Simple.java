@@ -8,12 +8,13 @@ public class Simple {
 		Scanner scan = new Scanner( System.in );
 		String name = scan.next();
 		String rev = "";
-		for( int i = name.length(); i > 0; i-- )
+		for( int i = rev.length() - 1; i >= 0; i-- )
 		{
 			rev = rev + name.charAt( i );
 		}
 		System.out.println( rev );
 		
+		scan.close();
 	}
 
 }
